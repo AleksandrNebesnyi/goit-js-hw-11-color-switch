@@ -2,11 +2,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"oLA8":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.colors=void 0;var e=["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"];exports.colors=e;
-},{}],"MgTz":[function(require,module,exports) {
+},{}],"EeJb":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.randomIntegerFromInterval=void 0;var r=function(r,e){return Math.floor(Math.random()*(e-r+1)+r)};exports.randomIntegerFromInterval=r;
-},{}],"XbrD":[function(require,module,exports) {
-"use strict";var t=require("./colors.js"),e=require("./utils.js"),n=1e3,r={btnStart:document.querySelector('[data-action="start"]'),btnStop:document.querySelector('[data-action="stop"]'),body:document.body},o=null;r.btnStart.addEventListener("click",function(a){o=setInterval(function(){r.body.style.backgroundColor=t.colors[(0,e.randomIntegerFromInterval)(0,t.colors.length-1)]},n),r.btnStart.parentElement.classList.add("disabled")}),r.btnStop.addEventListener("click",function(t){o&&(clearInterval(o),o=null,r.btnStart.parentElement.classList.remove("disabled"))});
-},{"./colors.js":"oLA8","./utils.js":"MgTz"}],"Focm":[function(require,module,exports) {
-"use strict";require("./scss/main.scss"),require("./js/color_switcher");
-},{"./scss/main.scss":"fx60","./js/color_switcher":"XbrD"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch/src.fb6a8d13.js.map
+},{}],"wgvZ":[function(require,module,exports) {
+"use strict";var t=require("./colors.js"),e=require("./random-integer.js"),o=1e3,n=null,r={btnStart:document.querySelector('[data-action="start"]'),btnStop:document.querySelector('[data-action="stop"]'),body:document.body};r.btnStart.addEventListener("click",function(a){n=setInterval(function(){console.log("click"),r.body.style.backgroundColor=t.colors[(0,e.randomIntegerFromInterval)(0,t.colors.length-1)]},o),r.btnStart.disabled=!0,console.log(r.btnStart.disabled)}),r.btnStop.addEventListener("click",function(t){n&&(clearInterval(n),r.btnStart.disabled=!1,console.log(r.btnStart.disabled))});
+},{"./colors.js":"oLA8","./random-integer.js":"EeJb"}],"Focm":[function(require,module,exports) {
+"use strict";require("./scss/main.scss"),require("./js/color-switcher");
+},{"./scss/main.scss":"fx60","./js/color-switcher":"wgvZ"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.2f3366b0.js.map

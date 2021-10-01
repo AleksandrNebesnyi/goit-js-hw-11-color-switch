@@ -1,0 +1,2 @@
+*,:after,:before{box-sizing:border-box;font-family:Ubuntu,sans-serif}body{min-height:100vh;background:#7ece16}.container,body{display:flex}.button,.container,body{justify-content:center;align-items:center}.button{position:relative;width:160px;height:60px;display:inline-block;z-index:10;display:flex;text-transform:uppercase;color:#2c2222;border:1px solid #e71235;overflow:hidden;cursor:pointer;margin-right:30px;background-color:#2196f3;transition:background-color .25s cubic-bezier(.4,0,.2,1)}
+/*# sourceMappingURL=/goit-js-hw-11-color-switch/src.2b43d50c.css.map */
